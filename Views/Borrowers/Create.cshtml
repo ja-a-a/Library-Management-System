@@ -1,0 +1,94 @@
+﻿@model TheLibrary.Models.Borrower
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container p-4" style="color:white; background-color: rgba(0,0,0, 0.8); width:30%;">
+    <h1 style="color: white">Add New</h1>
+    <h4 style="color: grey">Borrower</h4>
+    <hr />
+    <div class="row" style="color:white;">
+        <div>
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="BorrowerFname" class="control-label"></label>
+                    <input asp-for="BorrowerFname" class="form-control custom-input" />
+                    <span asp-validation-for="BorrowerFname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BorrowerLname" class="control-label"></label>
+                    <input asp-for="BorrowerLname" class="form-control custom-input" />
+                    <span asp-validation-for="BorrowerLname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <input asp-for="PhoneNumber" class="form-control custom-input" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control custom-input" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BorrowerType" class="control-label"></label>
+                    <select asp-for="BorrowerType" class="form-control custom-select" asp-items="ViewBag.BorrowerType">
+                        <option value="">-- Borrower Type --</option>
+                    </select>
+                    <span asp-validation-for="BorrowerType" class="text-danger"></span>
+                </div>
+                <br>
+                <div class="form-group d-flex">
+                    <a asp-action="Index" class="btn custom-btn" style="margin-right:36%">Cancel</a>
+                    <input type="submit" value="Create" class="btn btn-outline-info" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .custom-input {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+        .custom-input:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+    .custom-select {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+        .custom-select option {
+            background-color: black;
+            color: white;
+        }
+
+        .custom-select:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+    .custom-btn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+        .custom-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+</style>

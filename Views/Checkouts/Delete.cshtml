@@ -1,0 +1,113 @@
+﻿@model TheLibrary.Models.Checkout
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container p-4" style="color: white; background-color: rgba(0,0,0, 0.8); width: 40%;">
+    <h1 style="color: red;">Return</h1>
+    <h4 style="color: darkgrey;">BOOK(s)</h4>
+    <hr />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.CheckoutId)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.CheckoutId)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.CheckoutDate)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.CheckoutDate)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.DueDate)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.DueDate)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Borrower)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Borrower.BorrowerFullname)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Librarian)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Librarian.LibrarianFullname)
+            </dd>
+            <dt class="col-sm-12">
+                Books
+            </dt>
+            <div class="col-sm-10.5">
+                @foreach (var details in Model.Checkoutdetails)
+                {
+                    <dd class="card p-2 text-center custom-select">
+                        @details.Book.BookTitle
+                    </dd>
+                }
+            </div>
+        </dl>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+            <a asp-action="Index" class="btn custom-btn">Back</a>
+        </div>
+        <div class="col-sm-1">
+            <form asp-action="Delete" asp-route-id="@Model?.CheckoutId" method="post">
+                <input type="hidden" name="id" value="@Model?.CheckoutId" />
+                <input type="submit" class="btn btn-outline-danger" value="Return" />
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    body {
+        color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .this {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        width: 60%;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .custom-btn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+        .custom-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+    .custom-select {
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+    }
+
+        .custom-select:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+</style>

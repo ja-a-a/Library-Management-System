@@ -1,0 +1,549 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\controllers\\checkoutscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:controllers\\checkoutscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\controllers\\borrowerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:controllers\\borrowerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\checkouts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\checkouts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\borrowers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\borrowers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\checkouts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\checkouts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\checkouts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\checkouts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\checkouts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\checkouts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\checkouts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\checkouts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\borrowers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\borrowers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\borrowers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\borrowers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\borrowers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\borrowers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\borrowers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\borrowers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\checkoutdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\checkoutdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\borrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\borrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|c:\\users\\admin\\documents\\school works\\3rd year\\2nd sem\\library management system\\models\\librarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FD3B87A-2E93-4D4D-964A-0BADD42D5639}|TheLibrary.csproj|solutionrelative:models\\librarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:47:13.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkouts\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Checkouts\\Edit.cshtml",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T13:59:52.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Catalog.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Catalog.cs",
+              "RelativeDocumentMoniker": "Models\\Catalog.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Catalog.cs",
+              "RelativeToolTip": "Models\\Catalog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T09:33:26.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Models\\Author.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Author.cs",
+              "RelativeToolTip": "Models\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T00:29:56.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Genre.cs",
+              "RelativeDocumentMoniker": "Models\\Genre.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Genre.cs",
+              "RelativeToolTip": "Models\\Genre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T09:16:46.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "Views\\Books\\Create.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T15:42:14.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Controllers\\BooksController.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAqwCwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T15:18:43.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T23:31:52.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowersController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\BorrowersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BorrowersController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\BorrowersController.cs",
+              "RelativeToolTip": "Controllers\\BorrowersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T09:52:45.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Data\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Data\\LibraryDbContext.cs",
+              "RelativeToolTip": "Data\\LibraryDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T15:31:01.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Borrowers\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Borrowers\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T16:18:18.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "Views\\Books\\Details.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAE0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T09:38:09.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Books\\Delete.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T15:42:17.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Borrower.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Borrower.cs",
+              "RelativeDocumentMoniker": "Models\\Borrower.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Borrower.cs",
+              "RelativeToolTip": "Models\\Borrower.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T00:12:53.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckoutsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\CheckoutsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CheckoutsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\CheckoutsController.cs",
+              "RelativeToolTip": "Controllers\\CheckoutsController.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T10:07:46.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Checkoutdetail.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Checkoutdetail.cs",
+              "RelativeDocumentMoniker": "Models\\Checkoutdetail.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Checkoutdetail.cs",
+              "RelativeToolTip": "Models\\Checkoutdetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T00:26:33.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Checkout.cs",
+              "RelativeDocumentMoniker": "Models\\Checkout.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Checkout.cs",
+              "RelativeToolTip": "Models\\Checkout.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAYwBUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T23:34:30.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Views\\Books\\Index.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGgAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T09:35:26.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CheckoutViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\CheckoutViewModel.cs",
+              "RelativeToolTip": "Models\\CheckoutViewModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAYwB8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T05:09:44.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Borrowers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Create.cshtml",
+              "RelativeToolTip": "Views\\Borrowers\\Create.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T10:37:28.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Borrowers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Index.cshtml",
+              "RelativeToolTip": "Views\\Borrowers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-16T14:10:12.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Books\\Edit.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAADkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T06:19:48.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T15:19:39.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Borrowers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Borrowers\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T11:13:50.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkouts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Index.cshtml",
+              "RelativeToolTip": "Views\\Checkouts\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T07:03:27.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Borrowers\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Borrowers\\Details.cshtml",
+              "RelativeToolTip": "Views\\Borrowers\\Details.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T09:49:56.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkouts\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Create.cshtml",
+              "RelativeToolTip": "Views\\Checkouts\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T07:07:07.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkouts\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Details.cshtml",
+              "RelativeToolTip": "Views\\Checkouts\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-14T09:31:03.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T05:46:32.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkouts\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Checkouts\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Checkouts\\Delete.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T15:18:58.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Notification.cs",
+              "RelativeToolTip": "Models\\Notification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T09:16:48.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-16T05:57:57.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Librarian.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Librarian.cs",
+              "RelativeDocumentMoniker": "Models\\Librarian.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SCHOOL WORKS\\3rd YEAR\\2nd SEM\\Library Management System\\Models\\Librarian.cs",
+              "RelativeToolTip": "Models\\Librarian.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T00:06:12.359Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+﻿@model CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container p-4" style="color: white; background-color: rgba(0, 0, 0, 0.8); width: 40%;">
+    <h1 style="color: white;">Make New</h1>
+    <h4 style="color: grey;">Checkout</h4>
+    <hr />
+    <div class="row" style="color: white;">
+        <div>
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="BorrowerId" class="control-label">Borrower</label>
+                    <select id="borrowerSelect" asp-for="BorrowerId" class="form-control custom-select" asp-items="ViewBag.BorrowerId">
+                        <option value="">-- Select Borrower --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BorrowerType" class="control-label">Borrower Type</label>
+                    <input id="BorrowerType" asp-for="BorrowerType" class="form-control custom-input" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CheckoutDate" class="control-label">Checkout Date</label>
+                    <input asp-for="CheckoutDate" class="form-control custom-input" type="date" placeholder="-- Select Checkout Date --" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DueDate" class="control-label">Due Date</label>
+                    <input asp-for="DueDate" class="form-control custom-input" type="date" placeholder="-- Select Due Date --" />
+                </div>
+
+                <div class="form-group">
+                    <label for="searchBox">Search Books:</label>
+                    <input type="text" id="searchBox" class="form-control custom-input" placeholder="Search for books...">
+                </div>
+
+                <div id="bookList" class="list-group" style="display: none;">
+                    @foreach (var book in Model.AllBooks)
+                    {
+                        <div class="book-item list-group-item" style="background-color: rgba(255, 255, 255, 0.1); color: white; display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                            <span>@book.BookTitle</span>
+                            <button type="button" class="btn btn-light btn-sm add-book" data-bookid="@book.BookId" data-title="@book.BookTitle">+</button>
+                        </div>
+                    }
+                </div>
+
+                <br />
+                <label>Selected Books:</label>
+                <div id="selectedBooks" class="list-group">
+                    @foreach (var bookId in Model.SelectedBookIds)
+                    {
+                        var book = Model.AllBooks.FirstOrDefault(b => b.BookId == bookId);
+                        if (book != null)
+                        {
+                            <div class="list-group-item">
+                                <span class="book-title">@book.BookTitle</span>
+                                <button type="button" class="btn btn-danger btn-sm remove-book">Remove</button>
+                                <input type="hidden" name="SelectedBookIds" value="@book.BookId" />
+                            </div>
+
+                        }
+                    }
+                </div>
+                <br>
+                <div class="form-group d-flex">
+                    <a asp-action="Index" class="btn custom-btn" style="margin-right: 50%">Cancel</a>
+                    <input type="submit" value="Create" class="btn btn-outline-info" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.getElementById('borrowerSelect').addEventListener('change', function () {
+            var borrowerId = this.value;
+            if (borrowerId) {
+                fetch(`/Checkouts/GetBorrowerType?borrowerId=${borrowerId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('BorrowerType').value = data.borrowerType;
+                    })
+                    .catch(error => console.error('Error:', error));
+            } else {
+                document.getElementById('BorrowerType').value = '';
+            }
+        });
+
+        function clearSearchBox() {
+            document.getElementById('searchBox').value = '';
+            var bookItems = document.querySelectorAll('.book-item');
+            bookItems.forEach(function (item) {
+                item.style.display = 'none';
+            });
+            document.getElementById('bookList').style.display = 'none';
+        }
+
+        document.querySelectorAll('.add-book').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var bookId = this.getAttribute('data-bookid');
+                var bookTitle = this.getAttribute('data-title');
+
+                if (document.querySelector(`input[name="SelectedBooks"][value="${bookId}"]`)) {
+                    alert('You can only borrow one book at a time.');
+                    return;
+                }
+
+                var selectedBooks = document.getElementById('selectedBooks');
+                var bookItem = document.createElement('div');
+                bookItem.className = 'list-group-item';
+                bookItem.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                bookItem.style.color = 'white';
+                bookItem.innerHTML = `
+                    ${bookTitle}
+                    <button type="button" class="btn btn-danger btn-sm float-right remove-book">Remove</button>
+                    <input type="hidden" name="SelectedBooks" value="${bookId}" />
+                `;
+                selectedBooks.appendChild(bookItem);
+
+                bookItem.querySelector('.remove-book').addEventListener('click', function () {
+                    bookItem.remove();
+                });
+                button.disabled = true;
+                clearSearchBox();
+            });
+        });
+
+        document.getElementById('searchBox').addEventListener('keyup', function () {
+            var searchQuery = this.value.trim().toLowerCase();
+
+            if (searchQuery === '') {
+                var bookItems = document.querySelectorAll('.book-item');
+                bookItems.forEach(function (item) {
+                    item.style.display = 'none';
+                });
+                document.getElementById('bookList').style.display = 'none';
+            } else {
+                var bookItems = document.querySelectorAll('.book-item');
+                var hasResults = false;
+
+                bookItems.forEach(function (item) {
+                    var bookTitle = item.querySelector('span').textContent.toLowerCase();
+                    var button = item.querySelector('.add-book');
+
+                    if (bookTitle.includes(searchQuery)) {
+                        item.style.display = 'block';
+                        hasResults = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('bookList').style.display = hasResults ? 'block' : 'none';
+            }
+        });
+    </script>
+}
+
+<style>
+    .custom-input {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-input:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .custom-select {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-select option {
+        background-color: black;
+        color: white;
+    }
+
+    .custom-select:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .list-group-item {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .list-group-item:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .custom-btn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .list-group-item {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        display: flex;
+        justify-content: space-between; /* Aligns children to the edges */
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .book-title {
+        flex-grow: 1; /* Allows title to take up available space */
+    }
+
+    .remove-book {
+        margin-left: 10px; /* Adds spacing between the title and the button */
+    }
+
+</style>

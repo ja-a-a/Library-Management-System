@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Welcome to Library";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Library</title>
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .text-center {
+            margin-top: 20%;
+            color: white;
+            text-shadow: 5px 5px black;
+        }
+
+        .display-4 {
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        .display-1 {
+            font-size: 200px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h3 class="display-4">Welcome to</h3>
+        <h1 class="display-1">Library</h1>
+    </div>
+    <div class="text-center">
+        @*{{-- <p>Available books: @ViewBag.numofavailable</p>
+        <p>Total Books: @ViewBag.numofallbooks</p> --}}*@
+    </div>
+</body>
+</html>

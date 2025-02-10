@@ -1,0 +1,150 @@
+﻿@model IEnumerable<TheLibrary.Models.Checkout>
+
+@{
+    ViewData["Title"] = "Books Checkouts";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Library</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        h1 {
+            color: white;
+        }
+        .this {
+            background-color: rgba(0,0,0, 0.8) !important;
+        }
+        .table-hover tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .custom-btn {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+        .custom-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown .dropbtn {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-4 this">
+        <h1>Books Checkout</h1>
+        <a asp-action="Create" class="btn custom-btn">Checkout book</a>
+        <div class="row justify-content-end mb-4">
+            <div class="col-auto">
+
+                <form asp-action="Index" method="get" class="form-inline">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="searchString" placeholder="Search by Borrower" style="max-width: 300px;" />
+                        <div class="input-group-append">
+                            <button type="submit" class="btn custom-btn">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <table class="table-hover" style="color:white; width:100%;">
+            <thead class="border-bottom">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CheckoutDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Borrower.BorrowerType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Borrower)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Librarian)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DueDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Notification)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="border-bottom">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CheckoutDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Borrower.BorrowerType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Borrower.BorrowerFullname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Librarian.LibrarianFullname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DueDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Notification.NotifDescription)
+                        </td>
+                        <td class="center-content">
+                            <div class="dropdown">
+                                <button class="dropbtn">⋮</button>
+                                <div class="dropdown-content">
+                                    <a asp-action="Edit" asp-route-id="@item.CheckoutId">Edit</a>
+                                    <a asp-action="Details" asp-route-id="@item.CheckoutId">Details</a>
+                                    <a asp-action="Delete" asp-route-id="@item.CheckoutId">Return</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿@model TheLibrary.Models.Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container p-4" style="color: white; background-color: rgba(0, 0, 0, 0.8); width: 31%;">
+    <h1 style="color: white">Edit</h1>
+    <h4 style="color: grey">Book</h4>
+    <hr />
+    <div class="row">
+        <div>
+            <form asp-action="Edit" method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="BookId" />
+
+                <div class="form-group">
+                    <label asp-for="BookTitle" class="control-label"></label>
+                    <input asp-for="BookTitle" class="form-control custom-input" style="width: 350px;" />
+                    <span asp-validation-for="BookTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PublicationDate" class="control-label"></label>
+                    <input asp-for="PublicationDate" class="form-control custom-input" style="width: 350px;" />
+                    <span asp-validation-for="PublicationDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AuthorId" class="control-label"></label>
+                    <select asp-for="AuthorId" class="form-control custom-select" asp-items="ViewBag.AuthorId" style="width: 350px;">
+                    </select>
+                    <span asp-validation-for="AuthorId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GenreId" class="control-label"></label>
+                    <select asp-for="GenreId" class="form-control custom-select" asp-items="ViewBag.GenreId" style="width: 350px;">
+                    </select>
+                    <span asp-validation-for="GenreId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PublisherId" class="control-label"></label>
+                    <select asp-for="PublisherId" class="form-control custom-select" asp-items="ViewBag.PublisherId" style="width: 350px;">
+                        <option value="">-- Select Publisher --</option>
+                    </select>
+                    <span asp-validation-for="PublisherId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CatalogId" class="control-label"></label>
+                    <select asp-for="CatalogId" class="form-control custom-select" asp-items="ViewBag.CatalogId" style="width: 350px;">
+                    </select>
+                    <span asp-validation-for="CatalogId" class="text-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label asp-for="ShelfId" class="control-label"></label>
+                        <select asp-for="ShelfId" class="form-control custom-select" asp-items="ViewBag.ShelfId" style="width: 100px;">
+                        </select>
+                        <span asp-validation-for="ShelfId" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Quantity" class="control-label"></label>
+                        <input asp-for="Quantity" class="form-control custom-input" />
+                        <span asp-validation-for="Quantity" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsAvailable" /> @Html.DisplayNameFor(model => model.IsAvailable)
+                    </label>
+                </div>
+                <br />
+                <div class="form-group">
+                    <a asp-action="Index" class="btn custom-btn" style="margin-right:40%">Cancel</a>
+                    <input type="submit" value="Save" class="btn btn-outline-success" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<style>
+    .custom-input, .custom-select {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-input:focus, .custom-select:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .custom-select option {
+        background-color: black;
+        color: white;
+    }
+
+    .custom-btn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+</style>

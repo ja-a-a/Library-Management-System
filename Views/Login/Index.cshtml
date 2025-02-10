@@ -1,0 +1,63 @@
+﻿@model Librarian
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <title>LIBRARY</title>
+    <style>
+        .form-control {
+            color: white;
+        }
+        .form-control::placeholder {
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-image: url(images/library.jpg);background-size: cover; background-repeat: no-repeat;">
+
+<div class="row">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+        <div class="" style="margin-left: 55%; margin-top: 8%; width: 30%; background-color: rgba(0, 0, 0, 0.8); padding: 50px; border-radius: 5px; border: 2px solid rgba(51,51,51); box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.8);">
+        <form asp-action="Index">
+            <div class="d-flex justify-content-center">
+                <img class="center" src="images/open-book-education-gold-logo-vector-39685626.png" alt="Open book logo" style="max-width: 100%; height: 80%;width: 150px;">
+            </div>
+                <h2 style="color:white; text-align:center; font-family: 'Roboto', sans-serif;">LIBRARY</h2>
+            <br /><br />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="Email" class="form-control" placeholder="Username" style="background-color: transparent;border-bottom: 1px solid white;"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password" style="background-color: transparent; border-bottom: 1px solid white;" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+                <br />
+            <div class="form-group">
+                    <input type="submit" value="Login" class="btn btn-primary" style="border: 1px solid; color: white; background-color: transparent; width: 190px;"/>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

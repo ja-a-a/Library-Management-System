@@ -1,0 +1,83 @@
+﻿@model TheLibrary.Models.Borrower
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container p-4" style="color: white; background-color: rgba(0, 0, 0, 0.8); width: 31%;">
+    <h1 style="color: white">Edit</h1>
+    <h4 style="color: grey">Borrower</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="BorrowerId" />
+                <div class="form-group">
+                    <label asp-for="BorrowerFname" class="control-label"></label>
+                    <input asp-for="BorrowerFname" class="form-control custom-input" style="width: 350px;" />
+                    <span asp-validation-for="BorrowerFname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BorrowerLname" class="control-label"></label>
+                    <input asp-for="BorrowerLname" class="form-control custom-input" style="width: 350px;" />
+                    <span asp-validation-for="BorrowerLname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <input asp-for="PhoneNumber" class="form-control custom-input" style="width: 350px;" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control custom-input" style="width: 350px;" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BorrowerType" class="control-label"></label>
+                    <select asp-for="BorrowerType" class="form-control custom-select" asp-items="ViewBag.BorrowerType" style="width: 350px;"></select>
+                    <span asp-validation-for="BorrowerType" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group d-flex">
+                    <a asp-action="Index" class="btn custom-btn" style="margin-right:50%">Cancel</a>
+                    <button type="submit" class="btn btn-outline-success">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .custom-input, .custom-select {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-input:focus, .custom-select:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .custom-select option {
+        background-color: black;
+        color: white;
+    }
+
+    .custom-btn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .custom-btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
